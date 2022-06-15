@@ -44,4 +44,11 @@ c.execute('''SELECT JSON_OBJECT(
 output = c.fetchall()
 print(output)
 
+# Zmień długość i język filmu o id=2 zgodnie z tabelą
+c.execute('''UPDATE film SET  language = 'polish', length = 97 WHERE id = 2''')
+
+#Usuń film o id=1
+c.execute('''DELETE FROM film WHERE id = 1 ''')
+
+conn.commit()
 
