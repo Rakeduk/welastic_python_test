@@ -1,5 +1,10 @@
 import requests
+import api_key
+import json
 
-response = requests.get('https://api.github.com')
+towns = ["Warsaw", "London", "New York"]
 
-print(response)
+for town in towns:
+	response = requests.get(f"http://api.weatherapi.com/v1/current.json?key={api_key.key}&q={town}&aqi=no")
+	weather = response.json()['current']['temp_c']
+	print(town, weather)
