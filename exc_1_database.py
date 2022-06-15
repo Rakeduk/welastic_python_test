@@ -46,6 +46,7 @@ c.execute('''INSERT INTO film VALUES
 	(1, 'Inside Man', 'Thriller', 129, 'english'),
 	(2, 'The Sandman', 'Horror', 112, 'english')
  	''')
+c.execute("ALTER TABLE film RENAME COLUMN langauage TO language")
 
 conn.commit()
 
