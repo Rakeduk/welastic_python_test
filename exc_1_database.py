@@ -27,7 +27,7 @@ c.execute('''CREATE TABLE IF NOT EXISTS film(
 	name VARCHAR(255),
 	category VARCHAR(64),
 	length INTEGER,
-	langauage VARCHAR(64)
+	language VARCHAR(64)
 	) ''')
 
 # Add data to tables
@@ -46,7 +46,5 @@ c.execute('''INSERT INTO film VALUES
 	(1, 'Inside Man', 'Thriller', 129, 'english'),
 	(2, 'The Sandman', 'Horror', 112, 'english')
  	''')
-c.execute("ALTER TABLE film RENAME COLUMN langauage TO language")
-
 conn.commit()
 
