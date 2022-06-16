@@ -1,4 +1,10 @@
 # Welastic - test 
 
-## Database
+## Baza danych
+
+## Firebase
+
+## S3
+
+## WeatherAPI
 
