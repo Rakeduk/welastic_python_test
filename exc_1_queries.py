@@ -42,8 +42,7 @@ def modify(c, conn):
 def main():
     conn = sqlite3.connect('Baza_pyth')
     c = conn.cursor()
-    queries(c)
-    
+    queries(c)    
     modify(c, conn)
 
 
