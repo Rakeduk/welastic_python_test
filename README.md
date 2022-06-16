@@ -66,5 +66,7 @@ To use script, you need to add your own Api Key into api_key.py
 python3 weatherApi.py 
 ```
 
+## Room for Improvement
+- Extend S3 file uploader to upload file from every location
 
 
