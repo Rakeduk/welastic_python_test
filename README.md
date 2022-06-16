@@ -46,7 +46,7 @@ Solution isn't obvious, and further analyses drive me to think that we cannot co
 ## Amazon S3 file uploader/downloader
 Scripts allow us to upload/download multiple files directly to S3 Bucket with `boto3` 
 #### Usage
-Simple pass file name with extension as input argument (file has to be in same folder as script)
+Simply pass file name with extension as input argument (file has to be in same folder as script)
 ```console
 # Upload one file
 python3 s3_file_uploader.py test_file.txt
