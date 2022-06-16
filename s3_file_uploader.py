@@ -2,6 +2,7 @@ import api_key
 import boto3
 import os
 import sys
+from botocore.exceptions import ClientError
 
 
 def main():
@@ -12,9 +13,12 @@ def main():
 
     for file in sys.argv[1:]:
         if file in os.listdir():
-            object_name = 'data/' + str(file)
-            s3_client.upload_file(file, bucket, object_name)
-            print("Upload complete")
+            object_name = 'data/' + file
+            try:
+                s3_client.upload_file(file, bucket, object_name)
+                print(f"{file} uploaded")
+            except ClientError as e:
+            	print(f"Upload of {file} not completed")
 
 
 if __name__ == "__main__":
