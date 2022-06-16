@@ -6,6 +6,8 @@ Basic Python recruitment tasks for Welastic
 - SQLite 3.38 
  
 ## Data Base
+Basic data base operations. Queries return results in `JSON` format.
+
 #### Usage
 To use scripts, you have to install SQLite (for Ubuntu users - `sudo apt-get install sqlite3`)
 ```console
